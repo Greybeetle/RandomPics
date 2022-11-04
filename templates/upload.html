@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>上传图片</title>
+</head>
+
+<body>
+    <form action="http://localhost:5050/uploader" method="POST" enctype="multipart/form-data">
+        <input type="file" name="picture" accept=".bmp,.jpg,.png,.tif,.gif,.pcx,.tga,.exif,.fpx,.svg,.psd,.cdr,.pcd,.dxf,.ufo,.eps,.ai,.raw,.WMF,.webp,.avif,.apng" />
+        图片标签：
+        <select name="selectTag">
+            <option>风景</option>
+            <option>美食</option>
+            <option>动物</option>
+            <option>人物</option>
+            <option>动漫</option>
+            <option>影视</option>
+            <option>抽象</option>
+        </select>
+        图片类型：
+        <select name="selectType">
+            <option>手机</option>
+            <option>电脑</option>
+            <option>其他</option>
+        </select>
+        <input type="submit" value="提交" />
+    </form>
+</body>
+
+</html>
